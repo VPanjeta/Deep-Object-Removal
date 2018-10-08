@@ -3,7 +3,7 @@
 Image completion is a challenging problem because it requires a high-level recognition of scenes. This project tries to achieve object removal from images and get the base image reconstructed based on surrounding colours and objects using conditional GANs.
 
 # Overview
-This project is an implementation of cGANs discussed in the paper for [\[General Image Completion\]](https://www.dropbox.com/s/e4l19y9ggqqk2yf/0360.pdf?dl=1)
+This project is an implementation of cGANs discussed in the paper for [\[General Image Completion\]](https://www.dropbox.com/s/e4l19y9ggqqk2yf/0360.pdf?dl=1)  
 The models are tweaked a little and implemented to remove objects from images and reconstruct the image without the object.
 
 # Description
@@ -37,7 +37,9 @@ python3 main.py
 This will run the demo as an OpenCV application 
 
 ## Dependencies
-The project requires the following packages:
-OpenCV and OpenCV_python 3.3.0.10
-Tensorflow 1.10.1 
+The project requires the following packages:  
+
+
+OpenCV and OpenCV_python 3.3.0.10  
+Tensorflow 1.10.1  
 Numpy 1.13.3
