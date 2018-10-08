@@ -2,11 +2,11 @@ import os
 import numpy as np
 from cv2 import *
 import tensorflow as tf
-from graph_mscoco import *
+from model import *
 from glob import glob as files
 
 _x, _y = -1, -1
-size = 320
+size = 400
 sizeBlank, image_no, isDrawn, stroke_size = 20, 0, False, 3
 font = FONT_ITALIC
 # ^ Global variables
@@ -41,7 +41,7 @@ def mouse_callback(mouse_event, x, y, flags, parameters):
 
 
 images_files = []
-images_files.extend(sorted(files(os.path.join('testimages/', '*.bmp'))) )
+images_files.extend(sorted(files(os.path.join('images/', '*.jpg'))) )
 images_path = imread(images_files[image_no]) / 255.
 image = images_path
 # ^ Paths for image files strored in folder testimages
@@ -100,8 +100,8 @@ while(True):
         	}
         )
         filtered_image = np.array(output_tensor)[0,:,:,:].astype(float)
-        imwrite(os.path.join('results', images_files[image_no][21 : 35]), ((filtered_image[:,:,[2, 1, 0]]) * 255) )
-        imwrite(os.path.join('inputs', images_files[image_no][21 : 35]), ((image) * 255))
+        # imwrite(os.path.join('results', images_files[image_no][21 : 35]), ((filtered_image[:,:,[2, 1, 0]]) * 255) )
+        # imwrite(os.path.join('inputs', images_files[image_no][21 : 35]), ((image) * 255))
 
     elif key_pressed == 114: 
     	# r key pressed to reset the image
