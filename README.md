@@ -9,6 +9,12 @@ The models are tweaked a little and implemented to remove objects from images an
 # Example Usage
 ![](images/example/example.gif)
 
+## Hot Keys
+\[Esc\]: To quit the windowed application.  
+\[f\]: To filter out the masked object.  
+\[n\]: To go to the next image.  
+\[r\]: To refresh and undo all the masking in the current image.  
+
 # Description
 ## Files
 ### images/
