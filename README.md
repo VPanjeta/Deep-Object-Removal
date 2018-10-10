@@ -6,6 +6,9 @@ Image completion is a challenging problem because it requires a high-level recog
 This project is an implementation of cGANs discussed in the paper for [\[General Image Completion\]](https://www.dropbox.com/s/e4l19y9ggqqk2yf/0360.pdf?dl=1)  
 The models are tweaked a little and implemented to remove objects from images and reconstruct the image without the object.
 
+# Example Usage
+![](images/example/example.gif)
+
 # Description
 ## Files
 ### images/
